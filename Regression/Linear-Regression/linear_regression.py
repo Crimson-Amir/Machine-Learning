@@ -17,6 +17,7 @@ y = data[p].values
 
 best = 0
 for _ in range(100000):
+     
     liner = linear_model.LinearRegression()
     x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size=0.1)
     liner.fit(x_train, y_train)
